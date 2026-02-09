@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<title>4.C Voice Chat</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <div id="sidebar">
+    <h2>4.C Kanály</h2>
+    <input id="roomInput" placeholder="Názov miestnosti">
+    <button id="joinBtn">Pripojiť sa</button>
+    <ul id="roomsList"></ul>
+  </div>
+  <div id="main">
+    <h2 id="roomTitle">Nie si v miestnosti</h2>
+    <div id="controls">
+      <button id="muteBtn">Mute</button>
+    </div>
+    <div id="peers"></div>
+  </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
