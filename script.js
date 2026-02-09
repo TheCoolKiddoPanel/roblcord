@@ -1,4 +1,7 @@
-const socket = io();
+// ⚠️ TU ZADAJ URL TVOJHO SERVERA NA RENDERI
+const SERVER_URL = "https://servercord.onrender.com/"; 
+const socket = io(SERVER_URL);
+
 let localStream;
 let peers = {};
 let roomId;
